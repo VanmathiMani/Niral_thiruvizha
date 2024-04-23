@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>CareConnect</title>
+<style>
+.header{
+    background-color:lightblue;
+    }
+.logo{
+      position:relative;
+      float:left;
+      width:78px;
+      height:77px;
+      border-style:solid;
+      border-color:lightblue;
+      }
+.animate-character{
+
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+ 
+  }
+  @keyframes textclip{ 
+   to{
+      backgroud-position:200% center;
+     }
+  }
+
+a{
+  background-color:darkblue;
+  float:right;
+  color:white;
+  text-align:center;
+  padding:30px 18px;
+  font-size:17px;
+  }
+a:hover{
+        background-color:lightblue;
+        color:purple;
+       }
+a.active{
+          backgroung-color:purple;
+          color:yellow;
+        }
+
+.box{
+  display: inline-block;
+  margin: 35px;
+  height:46%;
+  width:34%;
+  color: green; 
+  border-color: green;
+  border-style: solid;
+  box-shadow: 30px 40px 40px rgba(0,0,0,.3);
+  align-items: center;
+  background-color: lightblue; 
+}
+.cell_one{
+  display: inline-block;
+  margin: 35px;
+  height:400px;
+  width:650px;
+  color: lightblue; 
+  border-color: darkblue;
+  border-style: solid;
+  box-shadow: 30px 40px 40px rgba(0,0,0,.3);
+  align-items: center;
+  background-image: url("g.jpg");
+  background-size: cover;
+          
+}
+
+.cell_one:hover { transform: scale(1.1);}
+.cell_one{transition: all 1.3s;}
+.cell_two{
+  display: inline-block;
+  margin: 35px;
+  height:400px;
+  width:650px;
+  color: lightblue; 
+  border-color: lightblue;
+  border-style: solid;
+  box-shadow: 30px 40px 40px rgba(0,0,0,.3);
+  align-items: center;
+  background-image: url("gg.jpg");
+  background-size: cover;
+          
+}
+
+.cell_two:hover { transform: scale(1.1);}
+.cell_two{transition: all 1.3s;}
+.box:hover { transform: scale(1.3);}
+.box{transition: all 1.3s;}
+.form_content{color: yellow;}
+</style>
+</head>
+<body>
+<div class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+                <img class="logo" src="logo.jpg" alt="logo" />
+                <h1 class="animate-character">Care Connect</h1>
+                    
+                     	<a href="contact.html">Contact Us</a>
+                     	<a href="about.html">About Us</a>
+			<a class="active" href="#patient_details">Patient Details</a> 
+                        <a href="signup.html">Sign Up</a>
+                        <a href="mathi.html">Home</a>
+            </div>
+         </div>
+      </div>
+</div>
+<div class="content">
+           <p>Visit our site for healthy life style</p>
+           <p>Patient details page!!</p>
+</div>
+<div class="content2">         
+    <div class="boxes">
+           <center><h1>ICU WARD - 01</h1></center>
+           <div class="cell_one">
+		<center><h1>Patient- 01</h1></center>
+		
+                <div class="forms">
+		<h2>Patient details:</h2> 
+			<form>
+  			<div class="form_content">
+   
+    				<label for="name"><b>Name</b></label>
+   	 			<input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    				<label for="age"><b>Age</b></label>
+    				<input type="text" placeholder="Enter Age" name="age" id="age" required>
+
+    				<label for="weight"><b>Weight</b></label>
+    				<input type="text" placeholder="Enter Weight" name="weight" id="weight" required>
+
+    			</form>
+			</div> 
+		</div>
+		
+           	<div class="signs">
+			<h2>Vital Signs</h2>
+		</div>
+		<div class="Medication">
+			<h2>Medication Recommendation:</h2>
+		</div>
+		<div class="signs">
+			<h2>Emergency Medication and practices:</h2>
+		</div>
+
+           </div>
+	
+           <div class="cell_one">
+		<center><h1>Patient- 02</h1></center>
+		<div class="forms">
+		<h2>Patient details:</h2> 
+			<form>
+  			<div class="form_content">
+   
+    				<label for="name"><b>Name</b></label>
+   	 			<input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    				<label for="age"><b>Age</b></label>
+    				<input type="text" placeholder="Enter Age" name="age" id="age" required>
+
+    				<label for="weight"><b>Weight</b></label>
+    				<input type="text" placeholder="Enter Weight" name="weight" id="weight" required>
+
+    			</form>
+			</div> 
+		</div>
+		<div class="signs">
+			<h2>Vital Signs:</h2>
+		</div>
+		<div class="Medication">
+			<h2>Medication Recommendation:</h2>
+		</div>
+		<div class="signs">
+			<h2>Emergency Medication and practices:</h2>
+		</div>
+
+           </div>
+           
+     </div>
+          
+<br></br>
+<div class="boxes">
+           <center><h1>ICU WARD - 02</h1></center>
+           <div class="cell_two">
+		<center><h1>Patient- 01</h1></center>
+		
+                <div class="forms">
+		<h2>Patient details:</h2> 
+			<form>
+  			<div class="form_content">
+   
+    				<label for="name"><b>Name</b></label>
+   	 			<input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    				<label for="age"><b>Age</b></label>
+    				<input type="text" placeholder="Enter Age" name="age" id="age" required>
+
+    				<label for="weight"><b>Weight</b></label>
+    				<input type="text" placeholder="Enter Weight" name="weight" id="weight" required>
+
+    			</form>
+			</div> 
+		</div>
+		
+           	<div class="signs">
+			<h2>Vital Signs</h2>
+		</div>
+		<div class="Medication">
+			<h2>Medication Recommendation:</h2>
+		</div>
+		<div class="signs">
+			<h2>Emergency Medication and practices:</h2>
+		</div>
+
+           </div>
+	
+           <div class="cell_two">
+		<center><h1>Patient- 02</h1></center>
+		<div class="forms">
+		<h2>Patient details:</h2> 
+			<form>
+  			<div class="form_content">
+   
+    				<label for="name"><b>Name</b></label>
+   	 			<input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    				<label for="age"><b>Age</b></label>
+    				<input type="text" placeholder="Enter Age" name="age" id="age" required>
+
+    				<label for="weight"><b>Weight</b></label>
+    				<input type="text" placeholder="Enter Weight" name="weight" id="weight" required>
+
+    			</form>
+			</div> 
+		</div>
+		<div class="signs">
+			<h2>Vital Signs:</h2>
+		</div>
+		<div class="Medication">
+			<h2>Medication Recommendation:</h2>
+		</div>
+		<div class="signs">
+			<h2>Emergency Medication and practices:</h2>
+		</div>
+
+           </div>
+           
+     </div>
+
+</div>
+
+</body>
+</html>

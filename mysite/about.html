@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>CareConnect</title>
+<style>
+.header{
+    background-color:lightblue;
+    border-style:solid;
+    border-color:darkblue;
+    }
+.logo{
+      position:relative;
+      float:left;
+      width:78px;
+      height:77px;
+      border-style:solid;
+      border-color:lightblue;
+      }
+.animate-character{
+
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+ 
+  }
+  @keyframes textclip{ 
+   to{
+      backgroud-position:200% center;
+     }
+  }
+
+a{
+  background-color:darkblue;
+  float:right;
+  color:white;
+  text-align:center;
+  padding:30px 18px;
+  font-size:17px;
+  }
+a:hover{
+        background-color:lightblue;
+        color:purple;
+       }
+a.active{
+          backgroung-color:purple;
+          color:yellow;
+        }
+body{
+          background-image: url("about2.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          
+          animation: mymoveagri 2s;
+          animation-delay: 2s;
+          animation-timing-gunction: ease-in-out;
+          -webkit-animation-timing-gunction: ease-in-out;
+         }
+
+</style>
+</head>
+<body>
+<div class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+                <img class="logo" src="logo.jpg" alt="logo" />
+                <h1 class="animate-character">Care Connect</h1>
+                    
+                     	<a href="contact.html">Contact Us</a>
+                     	<a class="active" href="#about">About Us</a>
+			<a href="patient_details.html">Patient Details</a> 
+                        <a href="signup.html">Sign Up</a>
+                        <a href="mathi.html">Home</a>
+            </div>
+         </div>
+      </div>
+</div>
+
+<div class="content">
+           <p>Visit our site for healthy life style</p>
+           <center><h1>Synergizing Healthcare Excellence...</h1></center>
+		<p>Synergizing Healthcare Excellence is a leading provider of real-time monitoring and intelligent healthcare delivery platforms. Our journey began with a vision to revolutionize the healthcare industry by leveraging cutting-edge technology to improve patient outcomes and optimize healthcare delivery....</p>
+
+<div class="hidden">
+<div class="content">
+    
+    <p><h2>Purpose and Goals</h2>
+        Our purpose is to empower healthcare providers with real-time data and insights to make informed decisions, improve efficiency, and deliver high-quality care to patients. Our goal is to revolutionize the way healthcare is delivered, ensuring a seamless and personalized experience for both patients and providers.
+</div>
+<div class="content">
+
+       <h2>Introduction to the Team</h2>
+        <p>Our team comprises seasoned professionals with expertise in healthcare, technology, and data analytics. From software engineers to healthcare specialists, each member brings a unique perspective and skill set to the table, ensuring that we deliver innovative solutions to our clients.
+        ...</p>
+    <p><h2>Offerings</h2>
+        At Synergizing Healthcare Excellence, we offer a comprehensive real-time monitoring and intelligent healthcare delivery platform that enables healthcare providers to monitor patients remotely, streamline workflows, and enhance communication among care teams. Our platform leverages the latest advancements in technology to deliver actionable insights and drive better outcomes.</p>
+
+</div>
+<div class="content">
+       <p>  <h2>Customer Opinion</h2>
+        "Our experience with Synergizing Healthcare Excellence has been nothing short of exceptional. Their platform has allowed us to improve patient care, reduce costs, and enhance efficiency within our organization." - Dr. Smith, Chief Medical Officer.
+        ...</p>
+</div>
+  </div>
+  <button class="btn" id="showMoreBtn">Show More</button>
+</div>
+
+<script>
+  const showMoreBtn = document.getElementById('showMoreBtn');
+  const hiddenContent = document.querySelector('.hidden');
+
+  showMoreBtn.addEventListener('click', function() {
+    if (hiddenContent.style.display === 'none') {
+      hiddenContent.style.display = 'block';
+      showMoreBtn.textContent = 'Show Less';
+    } else {
+      hiddenContent.style.display = 'none';
+      showMoreBtn.textContent = 'Show More';
+    }
+  });
+
+  
+</script>
+<hr/>
+<h2>call to action</h2>
+<p>Email us on..... careconnect@gmail.com</p>
+<p>Contact us on..... 9789737137</p>
+<p>Keep in touch with......Chengalpattu,Bigmelamaiyur,School Street,600302.</p>
+            
+</div>
+
+</body>
+</html>

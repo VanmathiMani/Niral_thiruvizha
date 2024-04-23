@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>Care Connect</title>
+<style>
+.header{
+    background-color:lightblue;
+    }
+.logo{
+      position:relative;
+      float:left;
+      width:78px;
+      height:77px;
+      border-style:solid;
+      border-color:lightblue;
+      }
+.animate-character{
+
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+ 
+  }
+  @keyframes textclip{ 
+   to{
+      backgroud-position:200% center;
+     }
+  }
+
+a{
+  background-color:darkblue;
+  float:right;
+  color:white;
+  text-align:center;
+  padding:30px 18px;
+  font-size:17px;
+  }
+a:hover{
+        background-color:lightblue;
+        color:purple;
+       }
+a.active{
+          backgroung-color:purple;
+          color:yellow;
+        }
+body{
+          background-image: url("signup.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 140%;  
+          animation: mymoveagri 2s;
+          animation-delay: 2s;
+          animation-timing-gunction: ease-in-out;
+          -webkit-animation-timing-gunction: ease-in-out;
+    }
+
+@keyframes mymoveagri{
+                  from{
+                       background-image: url("signup.jpg");
+                       background-size: cover;
+                       }
+                  to{
+                      background-image: url("signup.jpg");
+                      background-size: cover;
+                     }
+                  }
+.pt{color:lightgreen;}
+.form_content {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.forms {
+  padding: 16px;
+  background-color: white;
+  height:800px;
+  width:550px;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: lightgreen;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+.form_signin {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.form_signin {
+  background-color: #f1f1f1;
+  text-align: right;
+  color: black;
+
+}
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
+a.one{
+background-color: #f1f1f1;
+padding:0px 0px;}
+
+</style>
+</head>
+<body>
+<div class="header">
+      <div class="container"> 
+         <div class="row">
+            <div class="col-md-12">
+                <img class="logo" src="logo.jpg" alt="logo" />
+                <h1 class="animate-character">Care Connect</h1>
+
+                        <a href="contact.html">Contact Us</a>
+                     	<a href="about.html">About Us</a>
+			<a href="patient_details.html">Patient Details</a> 
+                        <a class="active" href="#signup">Sign Up</a>
+                        <a href="mathi.html">Home</a>
+            </div>
+         </div>
+      </div>
+</div>
+<br></br>
+<div class="content">
+           <center><h1 class="pt">Patient Details</h1></center><br></br>
+<div class="forms">
+<form>
+  <div class="form_content">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter Age" name="age" id="age" required>
+
+    <label for="weight"><b>Weight</b></label>
+    <input type="text" placeholder="Enter Weight" name="weight" id="weight" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+ 
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  <!--
+  <div class="form_signin">
+    <p>Already have an account? <a class="one" href="default.asp">signin</a>.</p>
+  </div>
+  -->
+</form>
+</div>                       
+</div>
+</body>
+</html>
